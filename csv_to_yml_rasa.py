@@ -48,7 +48,7 @@ print("nlu.yml file generated successfully.")
 # Create domain.yml content
 domain_data = {
     'version': '3.1',
-    'intents': list(set(intent for intent, _ in intents)),
+    'intents': list(intent for intent, _ in intents),
     'responses': {},
     'session_config': {'session_expiration_time': 60, 'carry_over_slots_to_new_session': True}
 }
