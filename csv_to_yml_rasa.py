@@ -22,7 +22,7 @@ nlu_data = {'version': '2.0', 'nlu': []}
 intent_examples = {}
 
 for intent, example in intents:
-    formatted_intent = f'inquire_{intent}'
+    formatted_intent = f'{intent}'
     if formatted_intent not in intent_examples:
         intent_examples[formatted_intent] = []
     intent_examples[formatted_intent].append(f"- {example}")
